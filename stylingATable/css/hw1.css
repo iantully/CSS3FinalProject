@@ -1,0 +1,157 @@
+/* IMPORTANT FOR READABILITY 
+- Best viewed around the following dimensions: 935px-940x x 983px
+- I found the easiest was to manage viewing was opening in Chrome, <inspect> the code, and look in the top right to get the dimensions percise */
+
+/* Week 4 Assignment: "Styling a Table" will be at the top half of the css file. */
+
+.cal {
+	border-top: #3ac159 solid 1px;
+	border-right: #3ac159 solid 1px;
+	border-left: #3ac159 solid 1px;
+	border-bottom: #3ac159 solid 5px; /* required thicker bottom border */
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	width: 95%;
+	height: 95%;
+	font-size: 14px;
+}
+
+th {
+	border: #59fff7 solid 3px;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	background-color: #3ac159;
+	text-shadow: 2px 2px #66f9f2;
+}
+/*My required addition property was a transition combined with a :hover pseudo-selector*/
+th:hover {
+	font-size: 105%
+}
+
+tr td {		/*aligning locations and league types */
+	text-align: center;
+}
+
+td:nth-child(2) {	/* This was necessary to allow the Location column to increase in size with :hover while not focing text into two lines */
+	width: 120px;
+}
+
+td:first-of-type { /* aligning team names left */
+	text-align: left;
+}
+
+tr {	/* Setting Opacity, followed by removal during cursor :hover */
+	opacity: .6;
+	transition: 1s ease;
+	height: 40px;
+}
+
+tr:hover {
+	opacity: 1.0;
+	font-size: 105%		/* My extra personal flair */
+}
+
+td:hover {		/* Wrote this to ensure users can easily focus on what their mouse is immediately over */
+	font-weight: bolder;
+}
+
+
+td {  /*Adding a background color gradient, ensuring compatibility across multiple browsers */
+	background: #c0f9e3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#c0f9e3, #66f9f2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#c0f9e3, #66f9f2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#c0f9e3, #66f9f2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#c0f9e3, #66f9f2); /* Standard syntax */
+	border: #3ac159 solid 1px;
+	padding: 10px;
+}
+
+/*Beginning of Week 2 Assingment: Advanced Styling*/
+
+body {
+	padding: 5px;
+	margin: 10px;
+	font-family: Arial, Verdana;
+}
+
+header {
+	background-image: url("../images/flywheel.jpg");
+	background-color: #c0f9e3 ;		 Background color set incase images fails 
+	padding-top: 1%;
+	padding-bottom: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-repeat: no-repeat;
+	height: 100px;
+}
+
+h1 {
+	color: #a8ffdf;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+nav a {
+	margin-left: 5.0%;
+	margin-right: 5.0%;
+	padding: 10px;
+	border-radius: 15px;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #c0f9e3; 
+	color: #598419;
+	opacity: 0.9;
+	width: 98px;
+	text-align: center;
+}
+
+nav a.active {
+	background-color: #3ac159;
+	font-size: 120%;
+}
+
+nav a:hover {		/* Added for better usability */
+	text-decoration: underline;
+	background-color: #fcfcfc;
+}
+
+img {
+	display: inline-block;
+	width: 200px;
+    border: solid black 3px;
+}
+
+aside a {		/*I wrote this do lock the clickable <a> tag specifically into each picture*/
+	display: inline-block;
+	width: 200px;
+    height: 110px;
+    margin: 30px;
+}
+
+aside {
+	float: left;
+	width: 278px;
+	height: 560px;
+	/*I added this addition for Week 4 Assignment: Styling a Table to match the color scheme of my table*/
+	background: #c0f9e3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#3ac159, #66f9f2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3ac159, #66f9f2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3ac159, #66f9f2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3ac159, #66f9f2); /* Standard syntax */
+	
+}
+
+.right{
+	float: right;
+	width: 67%;
+}
+
+h2 {
+	color: #314c84;
+	font-variant: small-caps;
+}
+
+p {
+	font-size: 15px;
+}
+
