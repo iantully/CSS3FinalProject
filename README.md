@@ -1,2 +1,2 @@
 # CSS3FinalProject
-This is the end of the course project for the UofMichigan's intro to CSS3 course
+While the HTML was provided, all students were charged with styling the HTML using only CSS3 and not touching the original HTML. 
